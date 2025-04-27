@@ -1,0 +1,209 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- include the jQuery source -->
+    <script src="./lib/jquery-3.7.1.js"></script>
+
+    <style>
+        .page {
+            display: flex;
+            width: 100vw;
+
+        }
+        .About{
+            flex: 5;
+            padding: 40px 30px;
+            border-radius: 12px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #384D48;
+        }
+        .Photos {
+            flex: 4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dropdowns details {
+            margin-bottom: 18px;
+            background: #D8D5D5;
+            border-radius: 8px;
+            padding: 10px 18px;
+            transition: background 0.2s;
+            box-shadow: 0 1px 3px rgba(56,77,72,0.04);
+        }
+
+        .dropdowns summary {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.05em;
+            outline: none;
+        }
+
+        .dropdowns details[open] {
+            background: #384D48;
+            color: white;
+        }
+        .dropdowns a {
+            color: white;
+        }
+        footer {
+            flex-shrink: 0;
+            margin-top: auto;
+            text-align: center;
+            padding: 16px 0;
+        }
+    </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header id="nav">
+                <img src="ACME.png">
+                <nav id="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="Freeware.html">Freeware</a>
+                    <a href="T&A.html">Toys & Asmusements</a>
+                    <a href="About-ACME.html">About ACME</a>
+                    <a class="active" href="About-Me.html">About Me</a>
+                    <a href="L&P.html">License and Privacy</a>
+                </nav>
+            </header>
+
+            <div class="page">
+                <div class="About">
+                    <h2>About Me</h2>
+                    <p>
+                        My Info: <br>
+                        Born: 1958, New York City <br>
+                        Raised: Bellport Long Island, Berkeley, Paris<br>
+                        Calling in life: software engineering<br>
+                        Housemates: just a few semi-feral cats<br>
+                        Alignment: chaotic/neutral-good<br>
+                        Favorite music: surf instrumentals, and covers
+                    </p>
+
+                    <h2>Link's I like</h2>
+                    
+                    <div class="dropdowns">
+                        <details>
+                            <summary>Biographical</summary>
+                            <ul>
+                                <li><a href="https://acme.com/jef/scars.html" target="_blank">Identifying scars and marks</a></li>
+                                <li><a href="https://twitter.com/jefposk" target="_blank">Twitter</a></li>
+                                <li><a href="http://poskanzer.org/lisa/PoskanzerTree/" target="_blank">Family Tree</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>Meterological</summary>
+                            <ul>
+                                <li><a href="https://acme.com/jef/flow/" target="_blank">River Flow</a></li>
+                                <li><a href="https://acme.com/jef/ggs/" target="_blank">Golden Gate Sunsets</a></li>
+                                <li><a href="https://acme.com/jef/creeks/" target="_blank">Berkeley Creeks</a></li>
+                                <li><a href="https://acme.com/jef/weather/" target="_blank">Bay Area Weather</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>Historical</summary>
+                            <ul>
+                                <li><a href="https://acme.com/jef/sixth/" target="_blank">Sixth Grade</a></li>
+                                <li><a href="https://acme.com/jef/nike/" target="_blank">Nike missiles</a></li>
+                                <li><a href="https://acme.com/jef/spare/" target="_blank">Spare The Air Days</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>Musical</summary>
+                            <ul>
+                                <li><a href="https://acme.com/jef/singing_science/" target="_blank">Singing Science Records</a></li>
+                                <li><a href="https://acme.com/jef/mix/" target="_blank">Jef's Mostly Mellow Mix</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>Ecumenical</summary>
+                            <ul>
+                                <li><a href="https://acme.com/jef/ulc/" target="_blank">My Universal Life Church ordination certificate</a></li>
+                                <li><a href="https://acme.com/jef/religion_sex/" target="_blank">Religion and sexual ethics chart</a></li>
+                                <li><a href="https://acme.com/jef/urbanist.html" target="_blank">Urbanist Manifesto</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>Miscellanical</summary>
+                            <ul>
+                                <li><a href="https://acme.com/jef/reviews/" target="_blank">Reviews on stuff I like</a></li>
+                                <li><a href="https://acme.com/jef/netgems/" target="_blank">Net Jems</a></li>
+                                <li><a href="https://acme.com/jef/eyenet1222.htm" target="_blank">eyeNET reveals that I am Santa Claus</a></li>
+                                <li><a href="https://acme.com/jef/jrc_quiz/" target="_blank">Collected links to the Jon Carroll Xmas Quizzes</a></li>
+                                <li><a href="https://acme.com/jef/nutrition.html" target="_blank">Nutrition Facts</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="Photos">
+                    <h1>My Photos</h1>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="no-img.png" alt="Photo 1">
+                            <div class="card-title">Photo 1</div>
+                        </div>
+                        <div class="card">
+                            <img src="no-img.png" alt="Photo 2">
+                            <div class="card-title">Photo 2</div>
+                        </div>
+                        <div class="card">
+                            <img src="no-img.png" alt="Photo 3">
+                            <div class="card-title">Photo 3</div>
+                        </div>
+                        <div class="card">
+                            <img src="no-img.png" alt="Photo 4">
+                            <div class="card-title">Photo 4</div>
+                        </div>
+                        <div class="card">
+                            <img src="no-img.png" alt="Photo 5">
+                            <div class="card-title">Photo 5</div>
+                        </div>
+                        <div class="card">
+                            <img src="no-img.png" alt="Photo 6">
+                            <div class="card-title">Photo 6</div>
+                        </div>
+                    </div>
+                    <div class="dropdowns">
+                        <details>
+                            <summary>More Photos</summary>
+                            <ul>
+                                <li><a href="https://acme.com/jef/photos/" target="_blank">Photos</a></li>
+                            </ul>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>
+    
+        <footer id="footer">
+            <h4>
+                Copyright 2025 - ACME Laboratories. All rights reserved.
+            </h4>
+        </footer>
+    </body>
+
+
+</html>
