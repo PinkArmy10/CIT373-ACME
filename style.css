@@ -100,3 +100,8 @@ footer {
     width: 400px;
     height: auto;
 }
+
+.card.Xlarge {
+    width: 600px;
+    height: auto;
+}

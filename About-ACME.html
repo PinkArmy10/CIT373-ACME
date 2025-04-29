@@ -4,8 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About ACME</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- include the jQuery source -->
+    <script src="./lib/jquery-3.7.1.js"></script>
+
+    <style>
+        .page {
+            display: flex;
+            width: 100vw;
+
+        }
+        .About{
+            flex: 5;
+            padding: 40px 30px;
+            border-radius: 12px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #384D48;
+        }
+        .Photos {
+            flex: 4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dropdowns details {
+            margin-bottom: 18px;
+            background: #D8D5D5;
+            border-radius: 8px;
+            padding: 10px 18px;
+            transition: background 0.2s;
+            box-shadow: 0 1px 3px rgba(56,77,72,0.04);
+        }
+
+        .dropdowns summary {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.05em;
+            outline: none;
+        }
+
+        .dropdowns details[open] {
+            background: #384D48;
+            color: white;
+        }
+        .dropdowns a {
+            color: white;
+        }
+        footer {
+            flex-shrink: 0;
+            margin-top: auto;
+            text-align: center;
+            padding: 16px 0;
+        }
+        ul {
+            list-style-position: inside;
+        }
+
+    </style>
 </head>
 <body>
+
+    <div class="container">
+        <header id="nav">
+            <img src="ACMEWhiteLogo.png">
+            <nav id="navbar">
+                <a href="index.html">Home</a>
+                <a href="Freeware.html">Freeware</a>
+                <a href="T&A.html">Toys & Asmusements</a>
+                <a class="active" href="About-ACME.html">About ACME</a>
+                <a href="About-Me.html">About Me</a>
+                <a href="L&P.html">License and Privacy</a>
+            </nav>
+        </header>
+
+        <div class="cards">
+            <div class="card Xlarge">
+                <div class="card-title">What Does ACME Mean?</div> <br>
+                <p>
+                    We get this question a lot, here at ACME Labs.
+                    
+                    The dictionary definition is: "the top", or "the highest point", or just "perfection". This is straight from Greek. (Greek mythology also includes a nymph named Acme.)<br><br>
+                    Apparently some early business school textbooks liked to use Acme as a business name in some of their examples.<br><br>
+                    There's a story that the business school use is an acronym, standing for "A Company Manufacturing Everything". This is probably false etymology.<br><br>
+                    Sears-Roebuck used Acme as one of their in-house brand names in the early 1900s, just like they use "Craftsman" today. For instance, take a look at this ad for an Acme anvil from the 1902 Sears catalog.<br><br>
+                    Warner Brothers apparently took the name from Sears and used it for the mail-order company in the Wile E. Coyote cartoons.
+                </p><br>
+
+                <div class="card-title"><a href="https://acme.com/what_is_acme/" target="_blank">View Orignial Page</a></div>
+
+            </div>
+
+            <div class="card Xlarge">
+                <div class="card-title">Other ACMEs on the Web</div> <br>
+                <p>
+                    When I registered acme.com in 1991 I was the first ACME on the net. Now there are over 250 of them. I've collected pointers to some of them with web pages.
+                    <br><br>
+                    As of January 2002, the other major ACMEs: 
+                </p>
+                <ul>
+                    <li>acme.org, dead</li>
+                    <li>acme.net, dead</li>
+                    <li>acme.gov, available</li>
+                    <li>acme.edu, available</li>
+                    <li>acme.mil, available</li>
+                    <li>acme.int, available</li>
+                    <li>acme.info, available</li>
+                    <li>acme.biz, Acme Products</li>
+                </ul>
+                <br>
+                <div class="card-title"><a href="https://acme.com/other_acmes.html" target="_blank">View all links on orignial page</a></div>
+
+            </div>
+
+            <div class="card Xlarge">
+                <div class="card-title">acme.com's hardware</div> <br>
+
+                <p>
+                    ACME is currently running on a nifty 8-core Atom C2750 machine that I built myself. The C2750 was introduced in late 2013 and got a lot of attention from folks like me. It's very low-power, to the point where it doesn't even need a CPU fan so it's nice and quiet. But the eight 64-bit 2.4 GHz cores still give it a lot of oomph.
+                    <br><br>
+                    Here are the build specs: 
+                    <br>
+                    Motherboard: SuperMicro A1SAi-2750F Mini-ITX (CPU included)<br>
+                    Case: Ablecom CS-M50 / SuperChassis 721TQ-250B (PSU & case fan included)<br>
+                    Memory: 2x Kingston 8GB DDR3 1600MHz ECC unbuffered SO-DIMM 204-pin<br>
+                    Boot&swap drive: 80GB intel DC S3500 2.5" SSD<br>
+                    Storage drives: 4x Western Digital Red 3TB 3.5" HDD
+                </p>
+                <br><br>
+                <div class="card-title"><a href="https://acme.com/hardware/" target="_blank">View past builds</a></div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <footer id="footer">
+        <h4>
+            Copyright 2025 - ACME Laboratories. All rights reserved.
+        </h4>
+    </footer>
     
 </body>
 </html>
