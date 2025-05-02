@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Laboratories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header id="nav">
+            <img src="ACMEWhiteLogo.png">
+            <nav id="navbar">
+                <a href="index.html">Home</a>
+                <a href="Freeware.html">Freeware</a>
+                <a href="T&A.html">Toys & Amusements</a>
+                <a href="About-ACME.html">About ACME</a>
+                <a class="active" href="About-Me.html">About Me</a>
+                <a href="L&P.html">License and Privacy</a>
+            </nav>
+        </header>
+    </div>
+
+    <h1>Toys & Amusements</h1>
+    <div class="toyCardsContainer">
+        <div class="toyCardLarge">
+            <h2>Make a Label!</h2>
+            <form>
+                <label for = "labelText">Label Text</label>
+                <input type="text" id="labelText" />
+                
+                <label for = "fonts">Font</label>
+                <select id="fonts" name="fonts">
+                    <option value="Aardvark Cafe">Aardvark Cafe</option>
+                    <option value="AdvertisersGothic">Advertisers Gothic</option>
+                    <option value="Alien">Alien</option>
+                    <option value="Apple2">Apple2</option>
+                    <option value="BabyBlock">BabyBlock</option>
+                    <option value="Bamboo">Bamboo</option>
+                    <option value="Bertinelli">Bertinelli</option>
+                    <option value="Betsy">Betsy</option>
+                    <option value="Bones">Bones</option>
+                    <option value="BreadClip">BreadClip</option>
+                    <option value="Calvin">Calvin</option>
+                    <option value="CandyBits">CandyBits</option>
+                    <option value="ComicSans">ComicSans</option>
+                    <option value="ComicSerif">ComicSerif</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Crackman">Crackman</option>
+                    <option value="CrystalRadio">CrystalRadio</option>
+                    <option value="Currency">Currency</option>
+                    <option value="Cyberia">Cyberia</option>
+                    <option value="DanceStep">DanceStep</option>
+                    <option value="Data70">Data70</option>
+                    <option value="Densmore">Diablo</option>
+                    <option value="Diablo">Diablo</option>
+                    <option value="DieNasty">DieNasty</option>
+                    <option value="DirtyDozen">DirtyDozen</option>
+                    <option value="DotMatrix">DotMatrix</option>
+                    <option value="Dyno">Dyno</option>
+                    <option value="Fedora">Fedora</option>
+                    <option value="Fillmore">Fillmore</option>
+                    <option value="Fridge">Fridge</option>
+                    <option value="Gawain">Gawain</option>
+                    <option value="Gilligan">Gilligan</option>
+                    <option value="Godzilla">Godzilla</option>
+                    <option value="Gotham Nights">Gotham Nights</option>
+                    <option value="Graffiti">Graffiti</option>
+                    <option value="Grinched">Grinched</option>
+                    <option value="Gubblebum">Gubblebum</option>
+                    <option value="Heavy Heap">Heavy Heap</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Henry III">Henry III</option>
+                    <option value="Hot Dog">Hot Dog</option>
+                    <option value="Lady Starlight">Lady Starlight</option>
+                    <option value="Loki Cola">Loki Cola</option>
+                    <option value="MUNIficent">MUNIficent</option>
+                    <option value="Mad">Mad</option>
+                    <option value="Manuscript">Manuscript</option>
+                    <option value="NASAL">NASAL</option>
+                    <option value="NeoGeo">NeoGeo</option>
+                    <option value="Neurotoxin">Neurotoxin</option>
+                    <option value="Nihon">Nihon</option>
+                    <option value="OCR-A">OCR-A</option>
+                    <option value="Octopuss">Octopuss</option>
+                    <option value="Pill">Pill</option>
+                    <option value="Pinyon Script">Pinyon Script</option>
+                    <option value="Pyrite">Pyrite</option>
+                    <option value="Raceway">Raceway</option>
+                    <option value="Ramson Note">Ramson Note</option>
+                    <option value="Ren Stimpy">Ren Stimpy</option>
+                    <option value="Romaneste">Romaneste</option>
+                    <option value="Samarkan">Samarkan</option>
+                    <option value="Signature">Signature</option>
+                    <option value="Squealer">Squealer</option>
+                    <option value="Teletype">Teletype</option>
+                    <option value="Timepiece">Timepiece</option>
+                    <option value="Times">Times</option>
+                    <option value="Tolkien">Tolkien</option>
+                    <option value="Transistor">Transistor</option>
+                    <option value="Trek Classic">Trek Classic</option>
+                    <option value="Typewriter">Typewriter</option>
+                    <option value="Voynich">Voynich</option>
+                    <option value="Wilow">Wilow</option>
+                    <option value="Yahoo">Yahoo</option>
+                    <option value="Yellow Sub">Yellow Sub</option>
+                    <option value="Zeppelin">Zeppelin</option>
+                </select>
+                
+
+                <label for = "textColor">Text Color</label>
+                <select id="textColor" name="textColor">
+                    <option value="White">White</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Cyan">Cyan</option>
+                    <option value="Magenta">Magenta</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Lime Green">Lime Green</option>
+                    <option value="Sea Green">Sea Green</option>
+                    <option value="ACME Green">ACME Green</option>
+                    <option value="Turqouise">Turqouise</option>
+                    <option value="Maroon">Maroon</option>
+                    <option value="Firebrick">Firebrick</option>
+                    <option value="Violet">Violet</option>
+                    <option value="Purple">Purple</option>
+                    <option value="Lavender">Lavender</option>
+                    <option value="Hot Pink">Hot Pink</option>
+                    <option value="Salmon">Salmon</option>
+                    <option value="Coral">Coral</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Sienna">Sienna</option>
+                    <option value="Tan">Tan</option>
+                    <option value="Dark Red">Dark Red</option>
+                    <option value="Dark Green">Dark Green</option>
+                    <option value="Dark Blue">Dark Blue</option>
+                </select>
+
+                <label for = "backgroundColor">Background Color</label>
+                <select id="backgroundColor" name="backgroundColor">
+                    <option value="White">White</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Black">Black</option>
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Cyan">Cyan</option>
+                    <option value="Magenta">Magenta</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Lime Green">Lime Green</option>
+                    <option value="Sea Green">Sea Green</option>
+                    <option value="ACME Green">ACME Green</option>
+                    <option value="Turqouise">Turqouise</option>
+                    <option value="Maroon">Maroon</option>
+                    <option value="Firebrick">Firebrick</option>
+                    <option value="Violet">Violet</option>
+                    <option value="Purple">Purple</option>
+                    <option value="Lavender">Lavender</option>
+                    <option value="Hot Pink">Hot Pink</option>
+                    <option value="Salmon">Salmon</option>
+                    <option value="Coral">Coral</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Sienna">Sienna</option>
+                    <option value="Tan">Tan</option>
+                    <option value="Dark Red">Dark Red</option>
+                    <option value="Dark Green">Dark Green</option>
+                    <option value="Dark Blue">Dark Blue</option>
+                </select>
+                
+                <label for = "filters">Filter</label>
+                <select id="filter" name="filter">
+                    <option value="None">None</option>
+                    <option value="Flip-LR">Flip-LR</option>
+                    <option value="Flip-TB">Flip-TB</option>
+                    <option value="Slant">Slant</option>
+                    <option value="Smooth">Smooth</option>
+                    <option value="Shrink">Shrink</option>
+                    <option value="Enlarge">Enlarge</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Spread">Spread</option>
+                    <option value="Shift">Shift</option>
+                    <option value="TV">TV</option>
+                    <option value="Frame">Frame</option>
+                </select>
+                <label for = "transparent">Transparent</label>
+                <input type="checkbox" id="transparent" name="transparent" value="Transparent">
+
+                <label for = "shadow">Shadow</label>
+                <input type="checkbox" id="shadow" name="shadow" value="Shadow">
+                <div></div>
+                <button type="button">Create Label</button>
+            </form>
+        </div>
+
+        <div class="toyCardLarge">
+            <h2>ACME Labs Calendar</h2>
+            <table>
+                April 2025
+                <thead>
+                    <tr>
+                        <th>Su</th>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>  
+            </table>
+        </div>
+
+        <div class="toyCardSmall">
+            <h2>ACME License Maker</h2>
+            <form>
+                <label for = "licenseText">License Text</label>
+                <input type="text" id="licenseText" />
+                
+                <label for="state">State</label>
+                <select id="state" name="state">state
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Iowa">Iowa</option>
+                    <option value="Kansas">Kansas</option>
+                    <option value="Kentucky">Kentucky</option>
+                    <option value="Louisiana">Louisiana</option>
+                    <option value="Maine">Maine</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Massachusetts">Massachusetts</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Minnesota">Minnesota</option>
+                    <option value="Mississippi">Mississippi</option>
+                    <option value="Missouri">Missouri</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Nebraska">Nebraska</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="New Hampshire">New Hampshire</option>
+                    <option value="New Jersey">New Jersey</option>
+                    <option value="New Mexico">New Mexico</option>
+                    <option value="New York">New York</option>
+                    <option value="North Carolina">North Carolina</option>
+                    <option value="North Dakota">North Dakota</option>
+                    <option value="Ohio">Ohio</option>
+                    <option value="Oklahoma">Oklahoma</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Pennsylvania">Pennsylvania</option>
+                    <option value="Rhode Island">Rhode Island</option>
+                    <option value="South Carolina">South Carolina</option>
+                    <option value="South Dakota">South Dakota</option>
+                    <option value="Tennessee">Tennessee</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Utah">Utah</option>
+                    <option value="Vermont">Vermont</option>
+                    <option value="Virginia">Virginia</option>
+                    <option value="Washington">Washington</option>
+                    <option value="West Virginia">West Virginia</option>
+                    <option value="Wisconsin">Wisconsin</option>
+                    <option value="Wyoming">Wyoming</option>
+                </select>
+                <div></div>
+                <button type="button">Create License</button>
+            </form>
+        </div>
+
+        <div class="toyCardSmall">
+            <h2>ACME Heart Maker</h2>
+            <form>
+                <label for = "heartTextTop">Top Heart Text </label>
+                <input type="text" id="heartTextTop" />
+                
+                <label for = "heartTextBottom">Bottom Heart Text </label>
+                <input type="text" id="heartTextBottom" />
+                
+                <label for = "heartColor">Heart Color</label>
+                <select id="heartColor" name="heartColor">
+                    <option value="Random Color">Random Color</option>
+                    <option value="Green">Green</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Purple">Purple</option>
+                    <option value="White">White</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Black">Black</option>
+                    <option value="Gray">Gray</option>
+                </select>
+                
+                <div></div>
+                <button type="button">Make Heart</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <h4>
+            Copyright 2025 - ACME Laboratories. All rights reserved.
+        </h4>
+    </footer>
+</body>
+</html>
