@@ -1,46 +1,45 @@
-
-body {
-    margin: 0;
-    font-family: Verdana, Tahoma, sans-serif;
-    background-color: #E2E2E2;
-    color: #384D48;
-}
-
+/* Header styling */
 header {
     background-color: #384D48;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 25px 40px;
 }
 
+/* Logo image */
 header img {
     height: 100px;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a {
     color: #FFFFFF;
     text-decoration: none;
-    margin: 0 10px;
     font-weight: bold;
+    font-size: 18px;
     font-family: Tahoma, Verdana, sans-serif;
+    padding: 10px 15px;
 }
 
 nav a:hover {
     color: #ACAD94;
 }
 
-main {
-    padding: 20px;
-    background-color: #FFFFFF;
-}
-
+/* Headline titles */
 h1 {
     text-align: center;
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bold;
-    color: #384D48; 
-    background-color: #E2E2E2; 
+    color: #384D48;
+    background-color: #E2E2E2;
     padding: 15px;
     border-radius: 10px;
     width: fit-content;
@@ -48,44 +47,55 @@ h1 {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-
+/* Card container (Home + other pages) */
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 30px;
 }
 
+/* Default card */
 .card {
     background-color: #D8D5D5;
-    width: 250px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: center;
     cursor: pointer;
     transition: transform 0.2s;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
+/* Card image */
 .card img {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
+/* Card title text */
 .card-title {
-    margin-top: 10px;
+    margin-top: 12px;
+    font-size: 18px;
     font-weight: bold;
     font-family: Verdana, sans-serif;
     color: #384D48;
 }
 
+/* Large card variation (like on maps.html) */
+.card.large {
+    width: 400px;
+    height: auto;
+}
+
+/* Footer */
 footer {
     background-color: #D8D5D5;
     text-align: center;
@@ -96,104 +106,42 @@ footer {
     margin-top: 20px;
 }
 
-.card.large {
-    width: 400px;
-    height: auto;
-}
-
-.card.Xlarge {
-    width: 600px;
-    height: auto;
-}
-
-table {
+/* Updates dropdown page */
+.updates-container {
+    max-width: 600px;
+    margin: 0 auto;
     text-align: center;
-    font-size: large;
-    margin-top: 10px;
 }
 
-.infoCardsContainer {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    align-items: flex-start;
-    margin-top: 10px;
+#update-select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 20px 0;
 }
 
-.infoCard {
-    width: 50%;
+.update-box {
     background-color: #D8D5D5;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 100px;
+    margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 20px;
-    transition: transform 0.2s;
-    border-radius: 8px;
+    font-family: Tahoma, sans-serif;
+    color: #384D48;
 }
 
-.toyCardsContainer {
+.cards.featured-center {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
     margin-top: 40px;
 }
 
-.toyCardLarge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #D8D5D5;
-    width: 500px;
-    height: 300px;
-    margin: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.2s;
-    border-radius: 8px;
+/* Make the featured card larger */
+.card.large {
+    width: 450px;
+    height: auto;
 }
 
-.toyCardSmall {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #D8D5D5;
-    width: 500px;
-    height: 200px;
-    margin: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-    transition: transform 0.2s;
-    border-radius: 8px;
-}
-
-form {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 4px;
-    width: auto;
-    font-size: 12px;
-}
-
-form label {
-    text-align: right;
-    align-self: center;
-    font-size: 12px;
-}
-
-form input,
-form select {
-    max-width: 180px;
-    font-size: 12px;
-    padding: 2px 4px;
-}
-
-form button {
-    justify-self: center;
-    margin-top: 10px;
-    width: 180px;
-}
-
-input[type="checkbox"] {
-    display: inline-block;
+.card.large img {
+    height: 240px;
 }

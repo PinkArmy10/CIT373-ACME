@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Updates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="ACMEWhiteLogo.png" alt="ACME Logo" />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="freeware.html">Freeware</a>
+          <a href="T&A.html">Toys & Amusements</a>
+          <a href="About-ACME.html">About ACME</a>
+          <a href="About-Me.html">About Me</a>
+          <a href="L&P.html">License and Privacy</a>
+      </nav>
+      </header>
+
+    <main>
+        <h1>ACME Updates</h1>
+
+        <div class="updates-container">
+            <label for="update-select">Select Update Date:</label><br><br>
+            <select id="update-select">
+                <option value="">-- Choose an update --</option>
+                <!-- script.js will fill in the rest dynamically -->
+            </select>
+
+            <div id="update-content" class="update-box">
+                <!-- Update text will appear here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 - ACME Laboratories. All rights reserved.
+    </footer>
+</body>
+</html>
