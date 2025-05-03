@@ -145,3 +145,95 @@ footer {
 .card.large img {
     height: 240px;
 }
+
+table {
+    text-align: center;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.infoCardsContainer {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.infoCard {
+    width: 50%;
+    background-color: #D8D5D5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+.toyCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.toyCardLarge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #D8D5D5;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+.toyCardSmall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #D8D5D5;
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    border-radius: 8px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 4px;
+    width: auto;
+    font-size: 12px;
+}
+
+form label {
+    text-align: right;
+    align-self: center;
+    font-size: 12px;
+}
+
+form input,
+form select {
+    max-width: 180px;
+    font-size: 12px;
+    padding: 2px 4px;
+}
+
+form button {
+    justify-self: center;
+    margin-top: 10px;
+    width: 180px;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+}
